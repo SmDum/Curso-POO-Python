@@ -1,6 +1,6 @@
 class MinhaClasse:
     
-    def __init__(self, info, elem): #metodo construtor
+    def __init__(self, info, elem): #metodo construtor é o primeiro!
         self.atributo_1 = "Atributo 1"
         self.atributo_2 = elem
         self.atributo_3 = [1, 2, "a"]
@@ -15,11 +15,10 @@ class MinhaClasse:
         return "Ola Mundo"
     
     def metodo_2(self, numero):
+        self.metodo_1()
         print(self.atributo_3[1] + numero)
     
 #objeto        #classe --> instanciamos um objeto
 minha_classe = MinhaClasse("Info aqui no construtor", 213)
 
-response = minha_classe.metodo_1()
-print(response)
 minha_classe.metodo_2(3)
