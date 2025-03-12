@@ -15,17 +15,17 @@ class Celular:
         
 class Pessoa:
     def __init__(self, celular : Celular)->None:
-        self.celular = celular
+        self.__celular = celular
     
     def pedir_pizza(self)->None:
         print("Buscando o celular...")
         print("Definindo o sabor...")
-        self.celular.enviar_mensagem("Quero uma de calabresa")
+        self.__celular.enviar_mensagem("Quero uma de calabresa")
         print("Aguardando a chegada")
         
     def estudar(self)->None:
         print("Sentando no computador...")
-        self.celular.abrir_youtube()
+        self.__celular.abrir_youtube()
         print("Anotando o conteúdo")
 
 android = Celular("Samsung")
