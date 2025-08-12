@@ -14,11 +14,13 @@ class MinhaClasse:
        return "Olá Mundo!"
 
     def metodo2(self, numero):
+        self.metodo1()
         print(self.atributo3[1] + numero)
     
  #objeto      #classe --> Instanciamos um objeto       
 minhaclasse = MinhaClasse("Info aqui no construtor") #instanciando a classe
 
-response = minhaclasse.metodo1() #chamando o método da classe MinhaClasse
+#response = minhaclasse.metodo1() #chamando o método da classe MinhaClasse
+#print(response) #imprimindo o retorno do método
+
 minhaclasse.metodo2(10) #chamando o método com parâmetro
-print(response) #imprimindo o retorno do método
